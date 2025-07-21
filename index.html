@@ -38,12 +38,20 @@
         }
         /* Styling for the main content container */
         .content-container {
-            max-width: 800px; /* Increased max-width to spread text more */
+            max-width: 800px;
             width: 100%;
-            padding: 4rem 4rem 2rem 4rem; /* Adjusted padding: Top, Right, Bottom, Left */
-            line-height: 1.6; /* Improve readability */
-            color: #282828; /* Dark gray text color */
-            text-align: left; /* Ensure left alignment for general content */
+            /* NEW: Default padding for mobile devices */
+            padding: 4rem 1.5rem 2rem 1.5rem; 
+            line-height: 1.6; 
+            color: #282828; 
+            text-align: left;
+        }
+        /* NEW: Media query to apply larger padding on screens 640px and wider */
+        @media (min-width: 640px) {
+            .content-container {
+                /* Restores original padding for desktops */
+                padding: 4rem 4rem 2rem 4rem;
+            }
         }
         /* Specific red for links - now the exact color from the image */
         .link-red {
@@ -55,21 +63,21 @@
 
         /* Styling for section headings */
         .section-heading {
-            font-size: 2rem; /* Slightly larger for more prominence */
-            font-weight: 700; /* Bolder for emphasis */
-            color: #282828; /* Same as main text color */
-            margin-top: 3rem; /* More space above new section */
-            margin-bottom: 1.5rem; /* More space below heading */
+            font-size: 2rem;
+            font-weight: 700;
+            color: #282828;
+            margin-top: 3rem;
+            margin-bottom: 1.5rem;
         }
         /* Styling for lists within sections */
         .section-list {
-            list-style: none; /* Remove default bullets */
+            list-style: none;
             padding: 0;
             margin: 0;
             line-height: 1.6;
         }
         .section-list li {
-            margin-bottom: 0.5rem; /* Space between list items */
+            margin-bottom: 0.5rem;
         }
         .section-list li:last-child {
                 margin-bottom: 0;
@@ -77,13 +85,13 @@
         /* Subtle horizontal divider */
         .divider {
             border: none;
-            border-top: 1px solid rgba(0, 0, 0, 0.1); /* Faint black line */
-            margin: 2.5rem 0; /* Space above and below the divider */
-            width: 100%; /* Full width */
+            border-top: 1px solid rgba(0, 0, 0, 0.1);
+            margin: 2.5rem 0;
+            width: 100%;
         }
         /* Justify text for the about me section */
         .about-me-text {
-            text-align: justify; /* Spreads text evenly across the line */
+            text-align: justify;
         }
     </style>
 </head>
@@ -91,7 +99,7 @@
 
     <div class="content-container">
 
-        <h1 class="text-xl sm:text-3xl font-extrabold text-gray-900 mb-6 leading-tight flex items-center">
+        <h1 class="text-2xl sm:text-3xl font-extrabold text-gray-900 mb-6 leading-tight flex items-center">
             <img src="913fe4a33d876f747d522de36788f2d8-removebg-preview.png" alt="Pixelated computer icon" class="h-10 sm:h-12">
             <img src="824d94a338807d883afcbc2ec24ddb33-removebg-preview.png" alt="Pixelated folder icon" class="h-14 sm:h-16 mr-2">
             Hi. I'm Aadyotya.
@@ -113,7 +121,7 @@
             </p>
             <p>
                 view my <a href="https://yourdomain.com/your-resume.pdf" target="_blank" rel="noopener noreferrer" class="link-red">resume</a>.
-                </p>
+            </p>
             <p>
                 <a href="#skills" class="link-red">skills.</a> my proficiencies.
             </p>
@@ -182,7 +190,7 @@
                     <div class="certification-meta">Infosys Springboard | Issued Sep 2023</div>
                     <div class="certification-skills">Skills: Java</div>
                     <a href="1-de3e3d46-cebf-4bc5-9eb1-2a2efe0a7cd8.pdf" target="_blank" rel="noopener noreferrer" class="link-red text-sm">Show credential</a>
-                    </li>
+                </li>
             </ul>
         </div>
 
@@ -191,7 +199,7 @@
         <div id="projects" class="mb-8">
             <h2 class="section-heading">Projects</h2>
             <ul class="section-list text-gray-700">
-                </ul>
+            </ul>
         </div>
 
         <p class="mt-8 text-sm text-gray-500">
