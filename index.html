@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hi, I'm Aadyotya.</title>
+    <!-- Load Tailwind CSS from CDN for easy styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom font import - Source Serif 4 for a strong, modern serif look */
+        @import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@400;600;700&display=swap');
+        html {
+            scroll-behavior: smooth; /* Smooth scrolling for anchor links */
+        }
+        body {
+            font-family: 'Source Serif 4', serif; /* Changed font to Source Serif 4 */
+            min-height: 100vh;
+            background-color: #FBF8F2; /* Exact color from your image */
+            display: flex; /* Use flexbox to position content */
+            align-items: flex-start; /* Align to the top of the viewport */
+            justify-content: flex-start; /* Align content to the left */
+            padding: 0; /* Reset body padding as container will handle spacing */
+            box-sizing: border-box;
+        }
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #888;
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
+        /* Styling for the main content container */
+        .content-container {
+            max-width: 800px; /* Increased max-width to spread text more */
+            width: 100%;
+            padding: 4rem 4rem 2rem 4rem; /* Adjusted padding: Top, Right, Bottom, Left */
+            line-height: 1.6; /* Improve readability */
+            color: #282828; /* Dark gray text color */
+            text-align: left; /* Ensure left alignment for general content */
+        }
+        /* Specific red for links - now the exact color from the image */
+        .link-red {
+            color: #A34337; /* Exact color from the provided image */
+        }
+        .link-red:hover {
+            text-decoration: underline; /* Underline on hover for links */
+        }
+
+        /* Styling for section headings */
+        .section-heading {
+            font-size: 2rem; /* Slightly larger for more prominence */
+            font-weight: 700; /* Bolder for emphasis */
+            color: #282828; /* Same as main text color */
+            margin-top: 3rem; /* More space above new section */
+            margin-bottom: 1.5rem; /* More space below heading */
+        }
+        /* Styling for lists within sections */
+        .section-list {
+            list-style: none; /* Remove default bullets */
+            padding: 0;
+            margin: 0;
+            line-height: 1.6;
+        }
+        .section-list li {
+            margin-bottom: 0.5rem; /* Space between list items */
+        }
+        .section-list li:last-child {
+                margin-bottom: 0;
+        }
+        /* Subtle horizontal divider */
+        .divider {
+            border: none;
+            border-top: 1px solid #e5e7eb; /* Light gray line */
+            margin: 2.5rem 0; /* Space above and below the divider */
+            width: 100%; /* Full width */
+        }
+        /* Justify text for the about me section */
+        .about-me-text {
+            text-align: justify; /* Spreads text evenly across the line */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Main content container -->
+    <div class="content-container">
+
+        <!-- Name and Tagline - Added font-extrabold class back -->
+        <h1 class="text-4xl sm:text-5xl font-extrabold text-gray-900 mb-6 leading-tight">
+            Hi. I'm Aadyotya.
+        </h1>
+
+        <!-- Short intro about yourself - now with justified text -->
+        <p class="text-lg text-gray-600 mb-8 about-me-text">
+            A Bachelor of Engineering student, I am passionate about solving complex business problems using data. My interest is in Machine Learning and its future applications in Generative AI, and I am currently developing hands-on expertise in Cloud Data Warehousing and modern Business Intelligence platforms.
+        </p>
+
+        <!-- Core Contact & Professional Links -->
+        <div class="space-y-2 mb-8 text-lg">
+            <p>
+                <a href="https://www.linkedin.com/in/aadyotya" target="_blank" rel="noopener noreferrer" class="link-red">linkedin.</a> where i share my work.
+            </p>
+            <p>
+                <a href="https://github.com/aadyotya" target="_blank" rel="noopener noreferrer" class="link-red">github.</a> my project repositories.
+            </p>
+            <p>
+                <a href="https://www.datascienceportfol.io/aadyotya" target="_blank" rel="noopener noreferrer" class="link-red">datascienceportfolio.io.</a> my data science showcase.
+            </p>
+            <p>
+                view my <a href="https://yourdomain.com/your-resume.pdf" target="_blank" rel="noopener noreferrer" class="link-red">resume</a>.
+                <!-- To update your resume, replace "https://yourdomain.com/your-resume.pdf" with the actual URL of your resume PDF.
+                     If hosting on GitHub Pages, you can upload your PDF to your repository (e.g., as 'resume.pdf')
+                     and then change the href to 'resume.pdf' or 'https://yourusername.github.io/resume.pdf'
+                     if using your GitHub Pages URL, or 'https://yourcustomdomain.in/resume.pdf' if using a custom domain. -->
+            </p>
+            <!-- Navigation links to sections -->
+            <p>
+                <a href="#skills" class="link-red">skills.</a> my proficiencies.
+            </p>
+            <p>
+                <a href="#certifications" class="link-red">certifications.</a> my credentials and qualifications.
+            </p>
+            <p>
+                <a href="#projects" class="link-red">projects.</a> view my portfolio.
+            </p>
+            <!-- Email Me line moved here -->
+            <p>
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=aadyotya@gmail.com" target="_blank" rel="noopener noreferrer" class="link-red">email me.</a> let's connect.
+            </p>
+        </div>
+
+        <!-- Divider before the first content section -->
+        <hr class="divider">
+
+        <!-- Skills Section - Removed strong tags -->
+        <div id="skills" class="mb-8">
+            <h2 class="section-heading">My Skills</h2>
+            <ul class="section-list text-gray-700">
+                <li>Programming Languages: Python, SQL, Java</li>
+                <li>Data Analysis & Machine Learning: Pandas, NumPy, Scikit-learn, TensorFlow, Statistical Analysis, Hypothesis Testing, Feature Engineering</li>
+                <li>Data Visualization & BI: Power BI, Tableau, Looker</li>
+                <li>Cloud & Databases: Google Cloud Platform (GCP), AWS, BigQuery, PostgreSQL</li>
+                <li>Developer Tools: Git, GitHub, Jupyter Notebooks, VS Code, Docker</li>
+                <li>Soft Skills: Problem-solving, Communication, Storytelling with Data, Teamwork</li>
+            </ul>
+        </div>
+
+        <!-- Divider between sections -->
+        <hr class="divider">
+
+        <!-- Certifications Section -->
+        <div id="certifications" class="mb-8">
+            <h2 class="section-heading">Certifications</h2>
+            <ul class="section-list text-gray-700">
+                <li class="certification-entry">
+                    <div class="certification-title">Business Analysis & Process Management</div>
+                    <div class="certification-meta">Coursera | Issued Jul 2025</div>
+                    <div class="certification-skills">Skills: Process Analysis, Business Process Analysis, Process Flow Diagrams, Business Process, Process Mapping, Process Modeling, Business Analysis</div>
+                    <a href="https://www.coursera.org/account/accomplishments/verify/8UNX5DKWFGC4" target="_blank" rel="noopener noreferrer" class="link-red text-sm">Show credential</a>
+                </li>
+                <li class="certification-entry">
+                    <div class="certification-title">Introduction to Data Analysis using Microsoft Excel</div>
+                    <div class="certification-meta">Coursera | Issued Jul 2025</div>
+                    <div class="certification-skills">Skills: Data Analysis, Data Mining, Data Manipulation, Microsoft Excel, Pivot Tables</div>
+                    <a href="https://www.coursera.org/account/accomplishments/verify/WRIMCEZWSHWY" target="_blank" rel="noopener noreferrer" class="link-red text-sm">Show credential</a>
+                </li>
+                <li class="certification-entry">
+                    <div class="certification-title">Database Management System</div>
+                    <div class="certification-meta">NPTEL | Issued Apr 2025</div>
+                    <div class="certification-skills">Skills: Database Design, SQL, Data Modeling, MySQL</div>
+                    <a href="https://archive.nptel.ac.in/noc/Ecertificate/?q=NPTEL25CS18S63640546501227417" target="_blank" rel="noopener noreferrer" class="link-red text-sm">Show credential</a>
+                </li>
+                <li class="certification-entry">
+                    <div class="certification-title">Java 17 Masterclass</div>
+                    <div class="certification-meta">Udemy | Issued Oct 2024</div>
+                    <div class="certification-skills">Skills: Java</div>
+                    <a href="https://www.udemy.com/certificate/UC-4a289693-3107-44d0-aa8e-4bc8a11ca241/" target="_blank" rel="noopener noreferrer" class="link-red text-sm">Show credential</a>
+                </li>
+                <li class="certification-entry">
+                    <div class="certification-title">Introduction to Machine Learning</div>
+                    <div class="certification-meta">NPTEL | Issued Sep 2024</div>
+                    <div class="certification-skills">Skills: Supervised Learning, Data Processing, Data Classification, Python (Programming Language), Regression Analysis, Machine Learning, Unsupervised Learning</div>
+                    <a href="https://archive.nptel.ac.in/noc/Ecertificate/?q=NPTEL24CS81S43200086102626656" target="_blank" rel="noopener noreferrer" class="link-red text-sm">Show credential</a>
+                </li>
+                <li class="certification-entry">
+                    <div class="certification-title">Programming using Java</div>
+                    <div class="certification-meta">Infosys Springboard | Issued Sep 2023</div>
+                    <div class="certification-skills">Skills: Java</div>
+                    <a href="1-de3e3d46-cebf-4bc5-9eb1-2a2efe0a7cd8.pdf" target="_blank" rel="noopener noreferrer" class="link-red text-sm">Show credential</a>
+                    <!-- IMPORTANT: For this PDF link to work, you must upload the '1-de3e3d46-cebf-4bc5-9eb1-2a2efe0a7cd8.pdf' file
+                         directly to the root of your GitHub Pages repository (or wherever your index.html is hosted). -->
+                </li>
+            </ul>
+        </div>
+
+        <!-- Divider between sections -->
+        <hr class="divider">
+
+        <!-- Projects Section -->
+        <div id="projects" class="mb-8">
+            <h2 class="section-heading">Projects</h2>
+            <ul class="section-list text-gray-700">
+                <!-- Project list items were removed as per previous request -->
+            </ul>
+        </div>
+
+        <!-- Footer / Copyright (Optional) -->
+        <p class="mt-8 text-sm text-gray-500">
+            &copy; <span id="current-year"></span> Aadyotya. All rights reserved.
+        </p>
+    </div>
+
+    <script>
+        // Dynamically set the current year for the copyright notice
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
